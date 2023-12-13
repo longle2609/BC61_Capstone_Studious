@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url("./pages/home.css");
 
+/* RESET CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/* COLOR dùng chung */
 :root {
     --text-primary: #707070;
     --text-secondary: #060606;
@@ -13,3 +17,135 @@
     --pink-1: #FF7B73;
     --white-1: #FFFF;
 }
+
+
+.container__header {
+    width: 100%;
+    margin: auto;
+    padding-top: 1rem;
+}
+
+
+/* HEADER CSS */
+header .header__top {
+    background-color: var(--blue-1);
+    height: 56px;
+}
+
+header .header__top ul {
+    list-style: none;
+    color: var(--white-1);
+}
+
+header .header__top li {
+    display: inline;
+    margin-right: 32px;
+}
+
+header .header__top li a {
+    color: var(--white-1);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+header .header__top li a:hover {
+    color: var(--pink-1);
+}
+
+header .header__bottom {
+    top: 56px;
+    z-index: 1;
+    width: 100%;
+    position: absolute;
+}
+
+header .header__bottom.--changeCss {
+    position: fixed;
+    top: 0;
+}
+
+header .header__bottom .navbar {
+    padding: 19.2px 20px;
+    background-color: var(--white-1) !important;
+}
+
+.me-auto {
+    margin-right: 0 !important;
+}
+
+header .header__bottom .navbar .navbar-brand {
+    color: var(--blue-1);
+    font-size: 26px;
+    font-weight: 600;
+}
+
+header .header__bottom .navbar-nav {
+    padding: 0 12px;
+}
+
+header .header__bottom .navbar-nav .nav-item {
+    padding: 0 12px;
+}
+
+header .header__bottom .navbar-nav .nav-link {
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 6px 0;
+    color: var(--text-secondary);
+}
+
+header .header__bottom .navbar-nav .nav-item:hover .nav-link {
+    color: var(--pink-1);
+}
+
+header .header__bottom .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+header .header__bottom .navbar-expand-lg .navbar-collapse .form-control {
+    border-radius: 30px;
+    padding: 10px 25px 10px 25px;
+    width: 256px;
+}
+
+header .header__bottom .navbar .navbar-collapse button {
+    border: none;
+    right: 18px;
+    top: 7px;
+    color: var(--blue-1);
+    font-weight: 600;
+    background-color: transparent;
+}
+
+header .header__bottom .navbar .navbar-nav .active {
+    color: var(--pink-1) !important;
+}
+
+
+/* BANNER CSS */
+.banner .carousel-item {
+    height: calc(100vh - 56px);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner1 {
+    background-image: url(./../images/img_banner1.jpg);
+    background-position: right 96px;
+}
+
+.banner2{
+    background-image: url(./../images/img_banner2.jpg);
+    
+}
+
+
+
+
+
+
+
+
+
