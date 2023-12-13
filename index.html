@@ -17,16 +17,189 @@
       crossorigin="anonymous"
     />
 
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- link CSS -->
     <link rel="stylesheet" href="./styles/styles.css" />
   </head>
 
   <body>
-    <header>
+    <header class="position-relative">
       <!-- place navbar here -->
+      <div class="header__top">
+        <div
+          class="container__header d-flex justify-content-between align-items-center"
+        >
+          <div class="header__top-left d-flex">
+            <ul>
+              <li>
+                <a href="#">Have any question ? </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone"></i>
+                <a href="#">+1(21) 234 4567 </a>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">mail@example.com </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header__top-right">
+            <ul>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <nav
+          class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                class="me-1"
+                src="./images/logo.png"
+                alt="LOGO STUDIOUS"
+              />Studious
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarScroll"
+              aria-controls="navbarScroll"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+              <ul
+                class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll"
+                style="--bs-scroll-height: 100px"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >HOME</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">ABOUT US</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PAGES
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">BLOG POSTS</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">404 PAGE</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">LANDING PAGE</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">CONTACT</a>
+                </li>
+              </ul>
+              <form class="d-flex position-relative" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="Enter Keyword"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-success position-absolute"
+                  type="submit"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-      <h1>abc</h1>
+      <section class="banner">
+        <div id="carouselExampleRide" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleRide"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item banner1 active">
+              <!-- <img
+                src="./images/img_banner1.jpg"
+                class="d-block w-100"
+                alt="..."
+              /> -->
+            </div>
+            <div class="carousel-item banner2">
+              <!-- <img
+                src="./images/img_banner2.jpg"
+                class="d-block w-100"
+                alt="..."
+              /> -->
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
       <!-- place footer here -->
@@ -43,5 +216,25 @@
       integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
       crossorigin="anonymous"
     ></script>
+    <script>
+      var header = document.querySelector(".header__bottom");
+
+      // function changeCss() {
+      //   header.style.position = "fixed";
+      //   header.style.top = "0";
+      // }
+
+      window.addEventListener("scroll", (event) => {
+        console.log(window.scrollY);
+        if (window.scrollY > 56) {
+          header.classList.add("--changeCss");
+          console.log("first");
+        } else {
+          if (header.classList.contains("--changeCss")) {
+            header.classList.remove("--changeCss");
+          }
+        }
+      });
+    </script>
   </body>
 </html>
