@@ -18,13 +18,58 @@
     --white-1: #FFFF;
 }
 
-
 .container__header {
     width: 100%;
     margin: auto;
     padding-top: 1rem;
 }
 
+/* section title */
+.title__heading {
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    max-width: 700px;
+
+}
+
+.title__heading h2 {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+    text-transform: capitalize;
+    position: relative;
+}
+
+.title__heading span {
+    color: var(--pink-1);
+}
+
+.title__heading h2::before,
+.title__heading h2::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: var(--text-primary);
+
+}
+
+.title__heading h2::before {
+    right: 0;
+    left: -20px;
+    bottom: -8px;
+    margin: 0 auto;
+}
+
+.title__heading h2::after {
+    right: 0;
+    left: 20px;
+    bottom: -15px;
+    height: 3px;
+    margin: 0 auto;
+
+}
 
 /* HEADER CSS */
 header .header__top {
@@ -136,16 +181,80 @@ header .header__bottom .navbar .navbar-nav .active {
     background-position: right 96px;
 }
 
-.banner2{
+.banner2 {
     background-image: url(./../images/img_banner2.jpg);
-    
+
 }
 
 
+/* TEAM SECTION */
+.team__card {
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+    padding: 10px;
+    border-radius: 8px;
+}
 
+.team__card .team__image {
+    position: relative;
+    overflow: hidden;
 
+}
 
+.team__card .team__image img {
+    width: 100%;
+    border-radius: 8px;
+}
 
+.team__image .team__info {
+    background: rgb(8 8 8 / 29%);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -250px;
+    transition: all .5s;
+}
 
+.team__card:hover .team__info {
 
+    bottom: 0;
+}
 
+.team__image .team__info .info__icon a {
+    display: inline-block;
+    margin-right: 8px;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    color: var(--blue-1);
+    background: var(--white-1);
+    border-radius: 50%;
+}
+
+.team__image .team__info .info__icon i {}
+
+.team__card .team__bottom {
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.team__card .team__bottom h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.team__card .team__bottom h3 a {
+    text-decoration: none;
+    color: #060606;
+    transition: all .5s;
+
+}
+
+.team__card .team__bottom p {
+    font-size: 13px;
+    color: var(--text-primary);
+}
+
+.team__card:hover .team__bottom h3 a {
+    color: var(--pink-1);
+}
