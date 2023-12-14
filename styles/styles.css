@@ -65,7 +65,7 @@ p {
     content: "";
     position: absolute;
     width: 60px;
-    height: 1px;
+    height: 2px;
     background-color: var(--text-primary);
 
 }
@@ -81,7 +81,6 @@ p {
     right: 0;
     left: 20px;
     bottom: -15px;
-    height: 3px;
     margin: 0 auto;
 
 }
