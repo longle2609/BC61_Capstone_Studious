@@ -18,6 +18,21 @@
     --white-1: #FFFF;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    line-height: 28px;
+    font-size: 16px;
+    letter-spacing: 0.4px;
+    margin-bottom: 0;
+}
+
 .container__header {
     width: 100%;
     margin: auto;
@@ -70,6 +85,7 @@
     margin: 0 auto;
 
 }
+
 
 /* HEADER CSS */
 header .header__top {
@@ -170,10 +186,23 @@ header .header__bottom .navbar .navbar-nav .active {
 
 
 /* BANNER CSS */
+.banner {
+    margin-bottom: 200px;
+}
 .banner .carousel-item {
     height: calc(100vh - 56px);
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.banner .carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.315);
 }
 
 .banner1 {
@@ -183,7 +212,165 @@ header .header__bottom .navbar .navbar-nav .active {
 
 .banner2 {
     background-image: url(./../images/img_banner2.jpg);
+}
 
+.banner .carousel-indicators {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2%;
+    bottom: 100px;
+}
+
+.banner .carousel-indicators button {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.banner .carousel-inner .carousel__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    max-width: 600px;
+    position: relative;
+    text-align: left;
+    top: 340px;
+}
+
+.banner .carousel-inner .carousel__text h1 {
+    font-size: 70px;
+    font-weight: bold;
+    color: var(--white-1);
+}
+
+.banner .carousel-inner .carousel__text a {
+    color: var(--text-secondary);
+    padding: 14px 30px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--white-1);
+    max-width: 180px;
+    margin-top: 40px;
+    transition: all 0.5s;
+}
+
+.banner .carousel-inner .carousel__text a:hover {
+    color: var(--white-1);
+    background-color: var(--pink-1);
+}
+
+.banner .carousel-inner .carousel__text a i {
+    display: inline-block;
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+
+.banner .banner__item {
+    display: flex;
+    flex-direction: column;
+    padding: 40px 25px;
+    color: var(--white-1);
+    border-radius: 8px;
+    
+}
+
+.banner .box__color-1 {
+    background-color: #037ef3;
+}
+
+.banner .box__color-2 {
+    background-color: #ffc949;
+}
+
+.banner .box__color-3 {
+    background-color: #ff4f81;
+}
+
+.banner .box__color-4 {
+    background-color: #1ee697;
+}
+
+.banner .banner__item i {
+    font-size: 45px;
+}
+
+.banner .banner__item a {
+    color: var(--white-1);
+    font-size: 24px;
+    margin-top: 25px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+.banner .banner__item a:hover {
+    color: var(--text-secondary);
+}
+
+.banner .text-center .row {
+    top: -60px;
+}
+
+
+/* STUDIUOUS */
+.studious i {
+    font-size: 30px;
+    color: var(--blue-1);
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    background-color: rgb(13 54 159 / 9%);
+}
+
+.studious .studious__top-text .row .studious__top-item h3 {
+    color: var(--text-secondary);
+    font-size: 24px;
+    line-height: 34px;
+    font-weight: 600;
+}
+
+.studious .studious__top-text .row .studious__top-item h3:hover {
+    color: var(--pink-1);
+}
+
+.studious .studious__bottom {
+    background-image: url(./../images/img_studious.jpg);
+    height: 528px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.studious .studious__bottom .studious__bottom-item {
+    padding: 30px;
+    background-color: var(--white-1);
+    border-radius: 8px;
+}
+
+.studious .studious__bottom .studious__bottom-item .icon {
+    margin-right: 16px;
+}
+
+.studious .studious__bottom .studious__bottom-item h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text-secondary);
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+/* NUMNER */
+.number .number__content  .number__item {
+    border-right: 1px solid #eee;
+}
+.number .number__content  .number__item h3 {
+    font-size: 40px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: 0;
 }
 
 
