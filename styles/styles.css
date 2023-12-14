@@ -258,3 +258,222 @@ header .header__bottom .navbar .navbar-nav .active {
 .team__card:hover .team__bottom h3 a {
     color: var(--pink-1);
 }
+
+/* CONTACT SECTION */
+.contact__info h3 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+}
+
+.contact__info p {
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-primary);
+    letter-spacing: .4px;
+}
+
+.contact__info button {
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 15px 30px;
+    border: transparent;
+    border-radius: 5px;
+    background: var(--pink-1);
+    color: var(--white-1);
+    text-transform: capitalize;
+    transition: all .5s;
+}
+
+.contact__info button:hover {
+    background: var(--blue-1);
+}
+
+/* footer */
+footer {
+    padding-top: 80px;
+    margin-top: 80px;
+    position: relative;
+}
+
+.footer__bg {
+    background: #060e1f;
+    padding: 80px 0;
+}
+
+.footer__bottom {
+    margin-top: 120px;
+}
+
+.footer__bg .footer__bottom h4 {
+    text-transform: uppercase;
+    color: var(--white-1);
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(23, 54, 88, 0.4);
+}
+
+.footer__bg .footer__bottom ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.footer__bg .footer__bottom ul a {
+    font-size: 14px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #cecece;
+    text-transform: capitalize;
+}
+
+.footer__bg .footer__bottom ul li {
+    margin-bottom: 10px;
+}
+
+.footer__bg .footer__bottom ul i {
+    font-size: 8px;
+    color: white;
+    margin-right: 10px;
+}
+
+/* footer contact column */
+.footer__bg .contact ul i {
+    font-size: 18px;
+    color: white;
+    margin-right: 10px;
+}
+
+.footer__bg .contact ul a {
+    text-transform: none;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+/* about column */
+footer .about {
+    border-left: 1px solid rgba(23, 54, 88, 0.4);
+}
+
+footer .about p {
+    color: #cecece;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+footer .about ul {}
+
+footer .about ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+footer .footer__bottom .about ul li a {
+    color: var(--white-1);
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: rgba(255, 255, 255, 0.06);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 35px !important;
+}
+
+footer .footer__bottom .about ul li a:hover {
+    opacity: .8;
+    transition: all .5s;
+}
+
+footer .about ul li a i {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
+/* sub__box */
+.sub__box {
+    background: var(--white-1);
+    padding: 50px;
+    border-radius: 10px;
+    max-width: 1000px;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    right: 0;
+    box-shadow: 0px -1px 41px 0px rgb(21 22 23 / 8%);
+}
+
+.sub__box .left__box h3 {
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--text-secondary);
+
+}
+
+.sub__box .left__box p {
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+}
+
+.sub__box .right__box input {
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.form-control:focus {
+    border-color: #91e6c4;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(46, 202, 139, 0.25);
+}
+
+.sub__box .right__box button {
+    font-size: 16px;
+    color: var(--white-1);
+    background: var(--blue-1);
+    font-weight: 600;
+    padding: 15px 30px;
+    border: none;
+}
+
+.sub__box .right__box button:hover {
+    opacity: .9;
+}
+
+/* copyright */
+.footer__copyright {
+    background: #040A17;
+    color: #a0a0a0;
+    padding: 20px 0;
+    line-height: 20px;
+    font-size: 15px;
+}
+
+.footer__copyright p {
+    margin: 0;
+}
+
+.footer__copyright a {
+    text-decoration: none;
+    color: var(--white-1);
+}
+
+.footer__copyright a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:576px) {
+    .footer__bottom {
+        margin-top: 240px;
+    }
+}
+
+@media screen and (max-width:992px) {
+
+    .footer__bg .footer__bottom h4 {
+        margin-bottom: 10px;
+        padding-bottom: 7px;
+    }
+}
