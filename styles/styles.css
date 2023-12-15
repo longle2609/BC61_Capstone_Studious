@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url("./pages/home.css");
+@import url("./pages/404page.css");
 
 /* RESET CSS */
 * {
@@ -188,6 +189,7 @@ header .header__bottom .navbar .navbar-nav .active {
 .banner {
     margin-bottom: 200px;
 }
+
 .banner .carousel-item {
     height: calc(100vh - 56px);
     background-repeat: no-repeat;
@@ -273,7 +275,7 @@ header .header__bottom .navbar .navbar-nav .active {
     padding: 40px 25px;
     color: var(--white-1);
     border-radius: 8px;
-    
+
 }
 
 .banner .box__color-1 {
@@ -362,10 +364,11 @@ header .header__bottom .navbar .navbar-nav .active {
 }
 
 /* NUMNER */
-.number .number__content  .number__item {
+.number .number__content .number__item {
     border-right: 1px solid #eee;
 }
-.number .number__content  .number__item h3 {
+
+.number .number__content .number__item h3 {
     font-size: 40px;
     font-weight: 600;
     color: var(--text-secondary);
@@ -626,6 +629,10 @@ footer .about ul li a i {
 
 .sub__box .right__box button:hover {
     opacity: .9;
+}
+
+.sub__box .right__box .input-group .btn {
+    z-index: inherit;
 }
 
 /* copyright */
