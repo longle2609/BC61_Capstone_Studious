@@ -32,6 +32,7 @@ p {
     font-size: 16px;
     letter-spacing: 0.4px;
     margin-bottom: 0;
+    color: var(--text-primary);
 }
 
 .container__header {
@@ -455,8 +456,6 @@ header .header__bottom .navbar .navbar-nav .active {
     background: var(--white-1);
     border-radius: 50%;
 }
-
-.team__image .team__info .info__icon i {}
 
 .team__card .team__bottom {
     text-align: center;
