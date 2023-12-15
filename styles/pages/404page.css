@@ -64,6 +64,8 @@
     line-height: 40px;
 }
 
+
+
 .error__searchBox .search__btn {
     position: absolute;
     right: 15%;
@@ -71,10 +73,12 @@
     line-height: 1;
     padding: 20px 18px;
     color: var(--pink-1);
+    outline: 0;
+
 }
 
 .error__searchBox .search__btn:hover {
-    background-color: var(--white-1);
+    background: transparent;
 }
 
 .toHome .toHome__btn {
