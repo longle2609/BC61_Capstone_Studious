@@ -375,6 +375,42 @@ header .header__bottom .navbar .navbar-nav .active {
     margin-bottom: 0;
 }
 
+/* FEEDBACK */
+.feedback .feedback__content .feedback__item {
+    background-color: var(--white-1);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+}
+
+.feedback .feedback__content .feedback__item i {
+    font-size: 28px;
+    color: var(--pink-1);
+    line-height: 0.8px;
+}
+
+.feedback .feedback__content .feedback__item img {
+    border-radius: 50%;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name {
+    margin-left: 15px;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name p {
+    font-size: 13px;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
 
 /* TEAM SECTION */
 .team__card {
