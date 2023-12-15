@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 @import url("./pages/home.css");
 @import url("./pages/404page.css");
+@import url('./pages/landing.css');
 
 /* RESET CSS */
 * {
@@ -32,6 +33,7 @@ p {
     font-size: 16px;
     letter-spacing: 0.4px;
     margin-bottom: 0;
+    color: var(--text-primary);
 }
 
 .container__header {
@@ -155,6 +157,20 @@ header .header__bottom .navbar-nav .nav-link {
     text-transform: uppercase;
     padding: 6px 0;
     color: var(--text-secondary);
+}
+
+.dropdown-item {
+    transition: all 0.5s;
+    font-weight: 600;
+}
+
+.dropdown-item.active {
+    background-color: transparent;
+}
+
+.dropdown-item:hover {
+    color: var(--pink-1);
+    background-color: transparent;
 }
 
 header .header__bottom .navbar-nav .nav-item:hover .nav-link {
@@ -375,6 +391,42 @@ header .header__bottom .navbar .navbar-nav .active {
     margin-bottom: 0;
 }
 
+/* FEEDBACK */
+.feedback .feedback__content .feedback__item {
+    background-color: var(--white-1);
+    padding: 32px;
+    border-radius: 4px;
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+}
+
+.feedback .feedback__content .feedback__item i {
+    font-size: 28px;
+    color: var(--pink-1);
+    line-height: 0.8px;
+}
+
+.feedback .feedback__content .feedback__item img {
+    border-radius: 50%;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name {
+    margin-left: 15px;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name p {
+    font-size: 13px;
+}
+
+.feedback .feedback__content .feedback__item .feedback__item-name .name {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+
+
+
+
 
 /* TEAM SECTION */
 .team__card {
@@ -419,8 +471,6 @@ header .header__bottom .navbar .navbar-nav .active {
     background: var(--white-1);
     border-radius: 50%;
 }
-
-.team__image .team__info .info__icon i {}
 
 .team__card .team__bottom {
     text-align: center;
