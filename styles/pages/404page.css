@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --text-primary: #707070;
+    --text-secondary: #060606;
+    --blue-1: #0D369F;
+    --pink-1: #FF7B73;
+    --white-1: #FFFF;
+}
+
+.main__404 {
+    background-image: url(../../images/404page.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding: 70px 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.error__main {
+    color: var(--white-1);
+    max-width: 500px
+}
+
+.error__main h2 {
+    font-size: 160px;
+}
+
+.error__main .error__message h3 {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.error__searchBox {
+    position: relative;
+
+}
+
+.error__searchBox .search__input {
+    font-size: 16px;
+    padding: 10px 58px 10px 20px;
+    border-radius: 30px;
+    border: none;
+    width: calc(100% - 60px);
+    line-height: 40px;
+}
+
+.error__searchBox .search__btn {
+    position: absolute;
+    right: 15%;
+    border: none;
+    line-height: 1;
+    padding: 20px 18px;
+    color: var(--pink-1);
+}
+
+.error__searchBox .search__btn:hover {
+    background-color: var(--white-1);
+}
+
+.toHome .toHome_btn{
+    
+}
