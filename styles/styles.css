@@ -3,6 +3,7 @@
 @import url("./pages/404page.css");
 @import url('./pages/landing.css');
 @import url('./pages/about-us.css');
+@import url('./pages/blog-posts.css');
 
 /* RESET CSS */
 * {
