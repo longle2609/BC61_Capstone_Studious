@@ -22,11 +22,23 @@
     min-height: 100vh;
     display: flex;
     align-items: center;
+    position: relative;
+}
+
+.main__404::before {
+    content: "";
+    background: linear-gradient(75deg, rgb(16 16 16 / 62%) 10%, rgb(230 2 100 / 0%));
+    position: absolute;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .error__main {
     color: var(--white-1);
-    max-width: 500px
+    max-width: 500px;
+    position: relative;
 }
 
 .error__main h2 {
@@ -52,6 +64,8 @@
     line-height: 40px;
 }
 
+
+
 .error__searchBox .search__btn {
     position: absolute;
     right: 15%;
@@ -59,12 +73,22 @@
     line-height: 1;
     padding: 20px 18px;
     color: var(--pink-1);
+    outline: 0;
+
 }
 
 .error__searchBox .search__btn:hover {
-    background-color: var(--white-1);
+    background: transparent;
 }
 
-.toHome .toHome_btn{
-    
+.toHome .toHome__btn {
+    padding: 20px;
+}
+
+.toHome .toHome__btn a {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    color: var(--white-1);
+    font-weight: 600;
 }

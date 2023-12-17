@@ -423,10 +423,33 @@ header .header__bottom .navbar .navbar-nav .active {
 }
 
 
+/* TEAM SECTION */
+.team__card {
+    box-shadow: 0 20px 62px rgb(4 20 69 / 10%);
+    padding: 10px;
+    border-radius: 8px;
+}
 
+.team__card .team__image {
+    position: relative;
+    overflow: hidden;
 
+}
 
+.team__card .team__image img {
+    width: 100%;
+    border-radius: 8px;
+}
 
+.team__image .team__info {
+    background: rgb(8 8 8 / 29%);
+    padding: 20px 0;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    bottom: -250px;
+    transition: all .5s;
+}
 
 /* TEAM SECTION */
 .team__card {
@@ -531,8 +554,8 @@ header .header__bottom .navbar .navbar-nav .active {
 
 /* footer */
 footer {
-    padding-top: 80px;
-    margin-top: 80px;
+    padding-top: 60px;
+    margin-top: 60px;
     position: relative;
 }
 
@@ -602,8 +625,6 @@ footer .about p {
     font-size: 14px;
     line-height: 24px;
 }
-
-footer .about ul {}
 
 footer .about ul li {
     display: inline-block;
