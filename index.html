@@ -21,8 +21,7 @@
 </head>
 
 <body>
-  <header class="position-relative">
-    <!-- place navbar here -->
+  <!-- <header class="position-relative">
     <div class="header__top">
       <div class="container__header d-flex justify-content-between align-items-center">
         <div class="header__top-left d-flex">
@@ -114,7 +113,7 @@
       </nav>
     </div>
     </section>
-  </header>
+  </header> -->
 
   <main>
     <!-- Banner -->
@@ -161,28 +160,31 @@
           </div>
         </div>
       </div>
+    </section>
+    <!-- SERVICE -->
+    <section class=" service">
       <div class="container text-center position-relative">
-        <div class="row row-cols-4 position-absolute">
-          <div class="col">
-            <div class="banner__item box__color-1">
+        <div class="row">
+          <div class="col-lg-3 col-md-6">
+            <div class="service__item box__color-1">
               <i class="fa-solid fa-gears"></i>
               <a href="#">Engineering & Architecture</a>
             </div>
           </div>
-          <div class="col">
-            <div class="banner__item box__color-2">
+          <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
+            <div class="service__item box__color-2">
               <i class="fa-solid fa-book"></i>
               <a href="#">Learning Management</a>
             </div>
           </div>
-          <div class="col">
-            <div class="banner__item box__color-3">
+          <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
+            <div class="service__item box__color-3">
               <i class="fa-solid fa-mug-saucer"></i>
               <a href="#">Business & Management</a>
             </div>
           </div>
-          <div class="col">
-            <div class="banner__item box__color-4">
+          <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
+            <div class="service__item box__color-4">
               <i class="fa-regular fa-hourglass-half"></i>
               <a href="#">Artificial <br />
                 Intelligence</a>
@@ -192,15 +194,17 @@
       </div>
     </section>
     <!-- Studious -->
-    <section class="studious py-5">
+    <section class="studious pb-5">
       <div class="studious__top py-5">
-        <div class="container py-5">
+        <div class="container py-4">
           <div class="title__heading text-center">
             <h2>Welcome to <span>Studious</span></h2>
           </div>
           <div class="studious__top-text">
-            <div class="row row-cols-3 text-center">
-              <div class="col px-5">
+            <!-- màn hình large chia 3 cột 3 dòng,  màn hình medium chia 2 cột 2 dòng,  màn hình sm chia 1 cột 1 dòng -->
+            <!-- gy-* là grid-gap theo chiều top bottom của các box -->
+            <div class="row row-cols-lg-3 row-cols-md-2 row-cols-1 gy-5 text-center justify-content-center ">
+              <div class="col">
                 <div class="studious__top-item">
                   <div class="icon">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -216,7 +220,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col px-5">
+              <div class="col">
                 <div class="studious__top-item">
                   <div class="icon">
                     <i class="fa-solid fa-users"></i>
@@ -232,7 +236,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col px-5">
+              <div class="col">
                 <div class="studious__top-item">
                   <div class="icon">
                     <i class="fa-solid fa-book"></i>
@@ -252,14 +256,16 @@
           </div>
         </div>
       </div>
-      <div class="studious__bottom py-5 d-flex align-items-center">
-        <div class="container py-4">
-          <div class="studious__bottom-content">
+      <div class="studious__bottom py-5 ">
+        <div class="container ">
+          <div class="studious__bottom-content d-flex align-items-center">
             <div class="studious__bottom-grid">
               <div class="row text-center">
-                <div class="col-4"></div>
-                <div class="col-8">
-                  <div class="row row-cols-2">
+                <!-- khi màn hình large thì chia 2 box tỉ lệ 4:8, khi màn sm,md thì chia 2 box trên dưới -->
+                <div class="col-lg-4"></div>
+                <div class="col-lg-8">
+                  <!-- màn hình large chia 2 cột 2 dòng, màn hình sm,md thì chia 1 cột 1 dòng -->
+                  <div class="row row-cols-lg-2 row-cols-1">
                     <div class="col">
                       <div class="studious__bottom-item my-2 d-flex align-items-center">
                         <div class="icon">
@@ -323,7 +329,9 @@
           </p>
         </div>
         <div class="number__content">
-          <div class="row row-cols-4 text-center">
+          <!-- màn hình sm chia 1 cột 1 dòng,  màn hình medium chia 2 cột 2 dòng, màn hình large chia 3 cột 3 dòng  -->
+          <!-- khi màn lg thì gy trả về 0 -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0 text-center">
             <div class="col">
               <div class="number__item">
                 <h3 class="counter">6,000</h3>
@@ -353,14 +361,14 @@
       </div>
     </section>
     <!-- Feedback -->
-    <section class="feedback pb-5">
-      <div class="container py-5">
-        <div class="title__heading py-5">
+    <section class="feedback py-5">
+      <div class="container py-4">
+        <div class="title__heading ">
           <h2>Student Community <span>Feedback</span></h2>
         </div>
         <div class="feedback__content py-5">
-          <div class="row row-cols-3">
-            <div class="col">
+          <div class="row gy-4 justify-content-center">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="feedback__item">
                 <div class="feedback__item-text">
                   <i class="fa-solid fa-quote-left"></i>
@@ -380,7 +388,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="feedback__item">
                 <div class="feedback__item-text">
                   <i class="fa-solid fa-quote-left"></i>
@@ -400,7 +408,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="feedback__item">
                 <div class="feedback__item-text">
                   <i class="fa-solid fa-quote-left"></i>
@@ -424,8 +432,9 @@
         </div>
       </div>
     </section>
+    <!-- instructor -->
     <section class="team pb-5">
-      <div class="container py-5">
+      <div class="container py-4">
         <div class="title__heading">
           <h2>World Class <span>Instructors</span></h2>
         </div>
@@ -521,6 +530,7 @@
         </div>
       </div>
     </section>
+    <!-- contact -->
     <seciton class="contact pb-5">
       <div class="container mb-5 pb-4">
         <div class="row justify-content-center align-items-center">
