@@ -4,6 +4,7 @@
 @import url('./pages/landing.css');
 @import url('./pages/about-us.css');
 @import url('./pages/blog-posts.css');
+@import url('./pages/contact.css');
 
 /* RESET CSS */
 * {
@@ -203,7 +204,6 @@ header .header__bottom .navbar .navbar-nav .active {
 
 
 /* BANNER CSS */
-.banner {}
 
 .banner .carousel-item {
     height: calc(100vh - 56px);
@@ -304,14 +304,17 @@ header .header__bottom .navbar .navbar-nav .active {
 
 .service .box__color-2 {
     background-color: #ffc949;
+    height: 100%;
 }
 
 .service .box__color-3 {
     background-color: #ff4f81;
+    height: 100%;
 }
 
 .service .box__color-4 {
     background-color: #1ee697;
+    height: 100%;
 }
 
 .service .service__item i {
@@ -731,24 +734,96 @@ footer .about ul li a i {
     text-decoration: underline;
 }
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:1880px) {
+
+    .banner .carousel-inner .carousel__text {
+        top: 90px;
+    }
+
+    .banner .carousel-inner .carousel__text h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .banner .carousel-inner .carousel__text a {
+        margin-top: unset;
+    }
+}
+
+@media screen and (max-width:1219px) {
+
+    .banner .carousel-inner .carousel__text {
+        max-width: 800px;
+        top: 130px;
+    }
+
+    .banner .carousel-inner .carousel__text h1 {
+        font-size: 70px;
+        line-height: 80px;
+    }
+
+    .banner .carousel-inner .carousel__text a {
+        margin-top: 20px;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+    .footer__bg .footer__bottom h4 {
+        margin-bottom: 10px;
+        padding-bottom: 7px;
+    }
+
     .header__top {
         display: none;
     }
 
-    .header__bottom {
-        display: none;
+    header .header__bottom {
+        top: 0;
     }
+
+    header .header__bottom .navbar {
+        background-color: transparent !important;
+    }
+
+    header .header__bottom .navbar-toggler {
+        background-color: var(--blue-1);
+    }
+
+    .banner .banner1 {
+        background-position: right 0;
+    }
+
+    .banner .carousel-inner .carousel__text {
+        top: 120px;
+    }
+
+    .banner .carousel-inner .carousel__text h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    .banner .carousel-inner .carousel__text a {
+        margin-top: 40px;
+    }
+
+    .service .--mg-service {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .service .--mg-service {
+        margin-bottom: 0;
+    }
+    
+}
+
+@media screen and (max-width:575px) {
 
     .footer__bottom {
         margin-top: 240px;
     }
 }
 
-@media screen and (max-width:992px) {
-
-    .footer__bg .footer__bottom h4 {
-        margin-bottom: 10px;
-        padding-bottom: 7px;
-    }
-}
