@@ -1,0 +1,51 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COLOR dùng chung */
+:root {
+    --text-primary: #707070;
+    --text-secondary: #060606;
+    --blue-1: #0D369F;
+    --pink-1: #FF7B73;
+    --white-1: #FFFF;
+}
+
+/* banner css  */
+.banner__about-us {
+    background-image: url(./../../images/img_banner-aboutus.jpg);
+    height: 400px;
+    background-repeat: no-repeat;
+    background-position: right -260px;
+    background-size: cover;
+}
+
+.banner__about-us .banner__title {
+    color: var(--white-1);
+    position: relative;
+    bottom: -70px;
+}
+
+.banner__about-us .banner__title h1 {
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.banner__about-us .banner__title a {
+    color: var(--text-primary);
+}
+
+.banner__about-us .banner__title i {
+    font-size: 9px;
+    color: var(--text-primary);
+    margin: 0 7px;
+}
+
+.banner__about-us .banner__title span {
+    color: var(--text-primary);
+}
+
+
