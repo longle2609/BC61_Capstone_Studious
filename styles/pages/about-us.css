@@ -49,3 +49,53 @@
 }
 
 
+/* content */
+.content .content__text h3 {
+    font-size: 45px;
+    line-height: 55px;
+    font-weight: 600;
+}
+
+.content .content__video img {
+    width: 100%;
+}
+
+/* studious__about */
+.studious__about {
+    background-color: #f8f9ff;
+}
+
+.studious__about .studious__top-item {
+    background-color: var(--white-1);
+    padding: 40px 30px;
+    border-radius: 8px;
+}
+
+.studious__about .icon {
+    display: inline-block;
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+}
+
+.studious__about .icon__smile {
+    color: #0abf53;
+    background: rgb(10 191 83 / 10%);
+}
+
+.studious__about .icon__graduation {
+    color: #ffc947;
+    background: rgb(255 201 73 / 22%);
+}
+
+.studious__about .icon__users {
+    color: #ff4f81;
+    background: rgb(255 79 129 / 15%);
+}
+
+.studious__about h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
