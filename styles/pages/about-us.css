@@ -14,6 +14,16 @@
     --white-1: #FFFF;
 }
 
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
 /* banner css  */
 .banner__about-us {
     background-image: url(./../../images/img_banner-aboutus.jpg);
@@ -98,4 +108,26 @@
 .studious__about h3 {
     font-weight: 600;
     font-size: 24px;
+}
+
+/* mission */
+.mission .mission__left h3 {
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 45px;
+
+}
+
+.mission .mission__left ul li {
+    padding: 5px 0;
+    color: var(--text-primary);
+}
+
+.mission .mission__left ul li i {
+    color: var(--pink-1);
+    margin-right: 5px;
+}
+
+.mission .mission__right img {
+    border-radius: 8px;
 }
