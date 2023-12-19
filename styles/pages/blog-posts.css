@@ -16,12 +16,11 @@
 }
 
 /* blog post  */
-
-main {
+.blog {
     padding: 50px 0;
 }
 
-main .container {
+.blog .container {
     max-width: 1200px;
     padding: 50px 0;
 }
