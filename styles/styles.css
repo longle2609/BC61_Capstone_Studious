@@ -662,6 +662,7 @@ footer .about ul li a i {
 .sub__box {
     background: var(--white-1);
     padding: 50px;
+    margin: 0 auto;
     border-radius: 10px;
     max-width: 1000px;
     position: absolute;
@@ -811,13 +812,16 @@ footer .about ul li a i {
     .service .--mg-service {
         margin-bottom: 20px;
     }
+
+    .sub__box {
+        margin: 0 1rem;
+    }
 }
 
 @media screen and (max-width:767px) {
     .service .--mg-service {
         margin-bottom: 0;
     }
-    
 }
 
 @media screen and (max-width:575px) {
@@ -826,4 +830,3 @@ footer .about ul li a i {
         margin-top: 240px;
     }
 }
-
