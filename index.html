@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <header class="position-relative">
+  <header id="header" class="position-relative">
     <div class="header__top">
       <div class="container__header d-flex justify-content-between align-items-center">
         <div class="header__top-left d-flex">
@@ -117,7 +117,7 @@
 
   <main>
     <!-- Banner -->
-    <section class="banner">
+    <section id="banner" class="banner">
       <div id="carouselExampleRide" class="carousel slide">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
@@ -361,7 +361,7 @@
       </div>
     </section>
     <!-- Feedback -->
-    <section class="feedback py-5">
+    <section class="feedback py-5" id="contact">
       <div class="container py-4">
         <div class="title__heading ">
           <h2>Student Community <span>Feedback</span></h2>
@@ -647,10 +647,9 @@
     </div>
   </footer>
 
-  <!-- Bootstrap JavaScript Libraries -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-    crossorigin="anonymous"></script>
+  <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </a>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -693,6 +692,12 @@
       }
     });
   </script>
+
+  <script src="./js/back-to-top-master/assets/js/util.js"></script>
+  <script src="./js/back-to-top-master/assets/js/main.js"></script>
+
+  
+
 </body>
 
 </html>

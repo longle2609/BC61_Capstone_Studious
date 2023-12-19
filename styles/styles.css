@@ -23,6 +23,10 @@
     --white-1: #FFFF;
 }
 
+html,body {
+    scroll-behavior: unset !important;
+}
+
 ul {
     list-style: none;
 }
@@ -829,4 +833,24 @@ footer .about ul li a i {
     .footer__bottom {
         margin-top: 240px;
     }
+
 }
+
+.back_to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    background-color: var(--blue-1);
+    color: var(--white-1);
+    padding: 10px 15px;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.cd-top--is-visible { 
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .cd-top--fade-out { 
+    opacity: .5;
