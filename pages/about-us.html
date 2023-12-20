@@ -21,11 +21,23 @@
 </head>
 
 <body>
+  <!-- video fullcreen  -->
+  <div class="fullcreen">
+    <div class="overlay__video"></div>
+    <div class="fullcreen__video">
+      <div class="fullcreen__video-content d-flex flex-column align-items-center">
+        <a href="#" id="close-button">x</a>
+        <iframe width="100%" height="420px"
+                src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0" frameborder="0"
+                allowfullscreen></iframe>
+        </div>
+    </div>
+  </div>
 
   <header class="position-relative">
     <!-- place navbar here -->
     <div class="header__top">
-      <div class="container__header d-flex justify-content-between align-items-center">
+      <div class="container__header d-flex justify-content-between">
         <div class="header__top-left d-flex">
           <ul>
             <li>
@@ -101,7 +113,7 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="./contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex position-relative" role="search">
@@ -134,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="content">
+    <section class="content p-5">
       <div class="container">
         <div class="row row-cols-2 align-items-center">
           <div class="col p-5">
@@ -145,11 +157,11 @@
             </div>
           </div>
           <div class="col p-5">
-            <div class="content__video">
+            <div class="content__video position-relative">
               <img src="./../images/img_bg-video.jpg" alt="">
-              <iframe width="100%" height="420px"
-                src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0" frameborder="0"
-                allowfullscreen></iframe>
+              <a href="#" id="play-video" class="position-absolute">
+                <i class="fa-regular fa-circle-play"></i>
+              </a>
             </div>
           </div>
         </div>
@@ -576,6 +588,7 @@
     $(".counter").countUp();
   </script>
 
+  <!-- hiệu ứng croll banner  -->
   <script>
     var header = document.querySelector(".header__bottom");
 
@@ -588,7 +601,6 @@
       console.log(window.scrollY);
       if (window.scrollY > 56) {
         header.classList.add("--changeCss");
-        console.log("first");
       } else {
         if (header.classList.contains("--changeCss")) {
           header.classList.remove("--changeCss");
@@ -596,6 +608,30 @@
       }
     });
   </script>
+
+  <!-- hiệu ứng click video  -->
+  <script>
+
+    var playButton = document.querySelector("#play-video")
+    var video = document.querySelector(".fullcreen")
+    var closeButton = document.querySelector("#close-button")
+    console.log(playButton)
+
+    playButton.addEventListener("click", (event) => {
+      video.classList.add('--clickCss');
+    })
+
+    closeButton.addEventListener("click", (event) => {
+      console.log(closeButton);
+      if (video.classList.contains('--clickCss')) {
+        video.classList.remove('--clickCss');
+      }
+    })
+
+
+  </script>
+
+
 </body>
 
 </html>
