@@ -23,7 +23,8 @@
     --white-1: #FFFF;
 }
 
-html,body {
+html,
+body {
     scroll-behavior: unset !important;
 }
 
@@ -619,6 +620,10 @@ footer {
     margin-right: 10px;
 }
 
+.footer__bg .contact ul li {
+    color: #cecece;
+}
+
 .footer__bg .contact ul a {
     text-transform: none;
     font-size: 15px;
@@ -641,6 +646,10 @@ footer .about ul li {
     margin-right: 5px;
 }
 
+footer .about .footer__social {
+    margin-top: 1rem;
+}
+
 footer .footer__bottom .about ul li a {
     color: var(--white-1);
     display: inline-block;
@@ -652,15 +661,21 @@ footer .footer__bottom .about ul li a {
     line-height: 35px !important;
 }
 
+footer .about ul li a i {
+    font-size: 15px !important;
+    margin: 0 !important;
+}
+
 footer .footer__bottom .about ul li a:hover {
     opacity: .8;
     transition: all .5s;
 }
 
-footer .about ul li a i {
-    font-size: 15px !important;
-    margin: 0 !important;
+footer .footer__bottom ul li a:hover {
+    color: var(--white-1);
+    transition: all .5s;
 }
+
 
 /* sub__box */
 .sub__box {
@@ -692,6 +707,7 @@ footer .about ul li a i {
 .sub__box .right__box input {
     padding: 15px 20px;
     font-size: 16px;
+    border-radius: 8px 0px 0px 8px;
 }
 
 .form-control:focus {
@@ -707,6 +723,8 @@ footer .about ul li a i {
     font-weight: 600;
     padding: 15px 30px;
     border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
 }
 
 .sub__box .right__box button:hover {
@@ -720,14 +738,15 @@ footer .about ul li a i {
 /* copyright */
 .footer__copyright {
     background: #040A17;
-    color: #a0a0a0;
     padding: 20px 0;
-    line-height: 20px;
-    font-size: 15px;
 }
 
 .footer__copyright p {
     margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    color: #a0a0a0;
+
 }
 
 .footer__copyright a {
@@ -831,9 +850,31 @@ footer .about ul li a i {
 @media screen and (max-width:575px) {
 
     .footer__bottom {
-        margin-top: 240px;
+        margin-top: 300px;
     }
 
+    footer .sub__box {
+        padding: 40px;
+    }
+
+    footer .sub__box .right__box {
+        margin-top: 20px;
+        padding: 0;
+    }
+
+    footer .sub__box .right__box form {
+        flex-wrap: wrap;
+    }
+
+    footer .sub__box .right__box input {
+        width: 100%;
+    }
+
+    footer .sub__box .right__box button {
+        width: 100%;
+        border-radius: 4px;
+        margin-top: 10px;
+    }
 }
 
 .back_to_top {
@@ -847,7 +888,7 @@ footer .about ul li a i {
     opacity: 0;
 }
 
-.cd-top--is-visible { 
+.cd-top--is-visible {
     visibility: visible;
     opacity: 1;
 }
