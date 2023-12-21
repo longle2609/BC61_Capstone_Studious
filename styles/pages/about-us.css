@@ -182,3 +182,48 @@ a {
     margin-bottom: 5px;
 }
 
+
+@media screen and (max-width:1399px) {
+
+    .banner__about-us {
+        height: unset;
+        min-height: 300px;
+        background-position: right -100px;
+    }
+
+    .banner__about-us .banner__title {
+        bottom: -20px;
+        color: var(--white-1);
+    }
+    
+    .banner__about-us .banner__title a {
+        color: var(--white-1);
+    }
+
+    .banner__about-us .banner__title i {
+        color: var(--white-1);
+    }
+
+    .banner__about-us .banner__title span {
+        color: var(--white-1);
+    }
+
+    .content .content__text h3 {
+        font-size: 44px;
+    }
+}
+
+@media screen and (max-width:1199px) {
+
+    .content .content__text h3 {
+        font-size: 34px;
+        line-height: 45px
+    }
+}
+
+@media screen and (max-width:991px) {
+
+    .number .number__content .number__item {
+        border-right: unset !important;
+    }
+}
