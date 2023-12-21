@@ -75,7 +75,7 @@ a {
     border-radius: 10px;
 }
 
-.content .content__video a {
+.content .content__video span {
     left: 0;
     right: 0;
     text-align: center;
@@ -83,9 +83,10 @@ a {
     top: calc(50% - 50px);
     color: var(--white-1);
     transition: all 0.5s;
+    cursor: pointer;
 }
 
-.content .content__video a:hover {
+.content .content__video span:hover {
     transform: scale(120%);
 }
 
@@ -166,20 +167,31 @@ a {
 
 .fullcreen.--clickCss {
     display: unset;
+    transition: 0.5s padding-top;
 }
 
 .fullcreen .fullcreen__video {
     position: relative;
-    top: 260px;
+    height: 100vh;
+    /* top: 450px; */
 }
 
-.fullcreen .fullcreen__video a {
+.fullcreen .fullcreen__video .fullcreen__video-content {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.fullcreen .fullcreen__video span {
     color: var(--white-1);
     position: relative;
     left: 366px;
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 5px;
+    cursor: pointer;
 }
 
 
