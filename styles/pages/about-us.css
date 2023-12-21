@@ -171,6 +171,7 @@ a {
 .fullcreen .fullcreen__video {
     position: relative;
     top: 260px;
+    margin: 40px auto;
 }
 
 .fullcreen .fullcreen__video a {
@@ -181,4 +182,3 @@ a {
     font-weight: 400;
     margin-bottom: 5px;
 }
-
