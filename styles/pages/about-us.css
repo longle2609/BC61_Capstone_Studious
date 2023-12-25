@@ -182,3 +182,31 @@ a {
     font-weight: 400;
     margin-bottom: 5px;
 }
+
+
+@media screen and (max-width: 768px) {
+    .content .content__text h3 {
+        font-size: 35px;
+        line-height: 50px;
+
+    }
+
+    .mission .mission__left h3 {
+        font-size: 35px;
+        line-height: 50px;
+
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .content .content__text h3 {
+        font-size: 28px;
+        line-height: 28px;
+    }
+
+    .mission .mission__left h3 {
+        font-size: 28px;
+        line-height: 38px;
+
+    }
+}

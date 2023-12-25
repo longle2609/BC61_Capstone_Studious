@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./../styles/styles.css" />
 </head>
 
-<body>
+<body id="myBody">
   <!-- video fullcreen  -->
   <div class="fullcreen">
     <div class="overlay__video"></div>
@@ -32,11 +32,9 @@
       </div>
     </div>
   </div>
-
-  <header class="position-relative">
-    <!-- place navbar here -->
+  <header id="header" class="position-relative">
     <div class="header__top">
-      <div class="container__header d-flex justify-content-between">
+      <div class="container__header d-flex justify-content-between align-items-center">
         <div class="header__top-left d-flex">
           <ul>
             <li>
@@ -79,10 +77,10 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar d-flex align-items-center navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img class="me-1" src="./../images/logo.png" alt="LOGO STUDIOUS" />Studious
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img class="me-1" src="../images/logo.png" alt="LOGO STUDIOUS" />Studious
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -91,10 +89,10 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">HOME</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">ABOUT US</a>
+                <a class="nav-link" href="../pages/about-us.html">ABOUT US</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -102,17 +100,17 @@
                   PAGES
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./blog-posts.html">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="../pages/blog-posts.html">BLOG POSTS</a></li>
                   <li>
-                    <a class="dropdown-item" href="./page404.html">404 PAGE</a>
+                    <a class="dropdown-item" href="../pages/page404.html">404 PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./landing-page.html">LANDING PAGE</a>
+                    <a class="dropdown-item" href="../pages/landing-page.html">LANDING PAGE</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">CONTACT</a>
+                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex position-relative" role="search">
@@ -121,6 +119,13 @@
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
             </form>
+          </div>
+          <div class="dark__light__theme">
+            <button id="toggleDark">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+
           </div>
         </div>
       </nav>
@@ -145,17 +150,17 @@
         </div>
       </div>
     </section>
-    <section class="content p-5" id="content">
+    <section class="content py-5" id="content">
       <div class="container">
-        <div class="row row-cols-2 align-items-center">
-          <div class="col p-5">
+        <div class="row row-cols-1 row-cols-lg-2 align-items-center">
+          <div class="col pr-lg-5">
             <div class="content__text">
               <h3>Our Mission is to Provide a World‑class Education</h3>
               <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
                 tempufddfel.</p>
             </div>
           </div>
-          <div class="col p-5">
+          <div class="col pr-lg-5 mt-5 mt-lg-0">
             <div class="content__video position-relative">
               <img src="./../images/img_bg-video.jpg" alt="">
               <a href="#full-video" id="play-video" class="position-absolute">
@@ -171,29 +176,31 @@
     <section class="number py-5">
       <div class="container py-4">
         <div class="number__content">
-          <div class="row row-cols-4 text-center">
+          <!-- màn hình sm chia 1 cột 1 dòng,  màn hình medium chia 2 cột 2 dòng, màn hình large chia 3 cột 3 dòng  -->
+          <!-- khi màn lg thì gy trả về 0 -->
+          <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0 text-center">
             <div class="col">
               <div class="number__item">
-                <h3 class="counter">6,000</h3>
-                <p class="text-black">LEARNERS & COUNTING</p>
+                <h3 class="counter">6,300</h3>
+                <p class="">LEARNERS & COUNTING</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item">
                 <h3 class="counter">638</h3>
-                <p class="text-black">TOTAL COURSES</p>
+                <p class="">TOTAL COURSES</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item">
                 <h3 class="counter">7,600</h3>
-                <p class="text-black">SUCCESSFUL STUDENTS</p>
+                <p class="">SUCCESSFUL STUDENTS</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item border-end-0">
                 <h3 class="counter">36</h3>
-                <p class="text-black">LANGUAGES</p>
+                <p class="">LANGUAGES</p>
               </div>
             </div>
           </div>
@@ -205,7 +212,7 @@
       <div class="studious__top py-5">
         <div class="container py-5">
           <div class="studious__top-text">
-            <div class="row row-cols-3 text-center">
+            <div class="row row-cols-md-2 row-cols-lg-3 text-center justify-content-center">
               <div class="col px-3">
                 <div class="studious__top-item text-center">
                   <div class="icon icon__smile">
@@ -221,7 +228,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col px-3">
+              <div class="col px-3 mt-4 mt-lg-0">
                 <div class="studious__top-item text-center">
                   <div class="icon icon__graduation">
                     <i class="fa-solid fa-graduation-cap"></i>
@@ -236,7 +243,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col px-3">
+              <div class="col px-3 mt-4 mt-md-0">
                 <div class="studious__top-item text-center">
                   <div class="icon icon__users">
                     <i class="fa-solid fa-users"></i>
@@ -264,7 +271,7 @@
           <h2>Who Makes the Magic Happen?<span>Know About Them</span></h2>
         </div>
         <div class="row justify-content-center text-center">
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -286,7 +293,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -308,7 +315,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -330,7 +337,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -352,11 +359,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
-                  <img src="../images/team4.jpg" alt="" />
+                  <img src="../images/team5.jpg" alt="" />
                 </a>
                 <div class="team__info">
                   <div class="info__icon">
@@ -374,7 +381,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -396,7 +403,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -418,7 +425,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-4">
             <div class="team__card">
               <div class="team__image">
                 <a href="">
@@ -469,14 +476,14 @@
   <footer>
     <div class="footer__bg ">
       <div class="container">
-        <div class="sub__box m-auto">
+        <div class="sub__box">
           <div class="row align-items-center ">
-            <div class="left__box col-lg-6">
+            <div class="left__box col-md-6">
               <h3>Subscribe Us to join our Community</h3>
               <p>Newsletter</p>
             </div>
-            <div class="right__box col-lg-6">
-              <form action class="input-group mb-3">
+            <div class="right__box col-md-6">
+              <form action class="mb-3 d-flex">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
                   aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
@@ -485,35 +492,35 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="archives col-lg-2 col-sm-6">
+          <div class="archives col-lg-2 col-sm-6 mt-4 mt-lg-0">
             <h4>archives</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
               </li>
             </ul>
           </div>
-          <div class="categories col-lg-3  col-sm-6 ps-lg-5">
+          <div class="categories col-lg-3 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>categories</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
               </li>
             </ul>
           </div>
-          <div class="contact col-lg-3 col-sm-6">
+          <div class="contact col-lg-3 col-sm-6 mt-4 mt-lg-0">
             <h4>contact</h4>
             <ul>
               <li>
@@ -523,11 +530,11 @@
                 <i class="fa-solid fa-phone"></i> <a href=""> +44-000-888-999</a>
               </li>
               <li>
-                <i class="fa-solid fa-location-dot"></i> <a href=""> London, 235 Terry, 10001</a>
+                <i class="fa-solid fa-location-dot"></i> London, 235 Terry, 10001
               </li>
             </ul>
           </div>
-          <div class="about col-lg-4  col-sm-6 ps-lg-5">
+          <div class="about col-lg-4 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>About</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero facilis debitis iure repellendus, quia
               quisquam sed ipsa quos soluta adipisci aspernatur odio quibusdam, assumenda magnam nihil nostrum.</p>
@@ -557,7 +564,10 @@
 
     </div>
     <div class="footer__copyright text-center">
-      <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+      <div class="container">
+        <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+
+      </div>
     </div>
   </footer>
 
@@ -630,10 +640,9 @@
         video.classList.remove('--clickCss');
       }
     })
-
-
   </script>
-
+  <!-- main JS -->
+  <script src="../js/main.js"></script>
 
 </body>
 

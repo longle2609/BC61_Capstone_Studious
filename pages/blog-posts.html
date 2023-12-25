@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./../styles/styles.css" />
 </head>
 
-<body>
+<body id="myBody">
   <header class="position-relative">
     <!-- place navbar here -->
     <div class="header__top">
@@ -67,10 +67,10 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar d-flex align-items-center navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="me-1" src="./../images/logo.png" alt="LOGO STUDIOUS" />Studious
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img class="me-1" src="../images/logo.png" alt="LOGO STUDIOUS" />Studious
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,28 +79,28 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">HOME</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                <a class="nav-link" href="../pages/about-us.html">ABOUT US</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   PAGES
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item active" href="./blog-posts.html">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="../pages/blog-posts.html">BLOG POSTS</a></li>
                   <li>
-                    <a class="dropdown-item" href="./page404.html">404 PAGE</a>
+                    <a class="dropdown-item" href="../pages/page404.html">404 PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./landing-page.html">LANDING PAGE</a>
+                    <a class="dropdown-item" href="../pages/landing-page.html">LANDING PAGE</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">CONTACT</a>
+                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex position-relative" role="search">
@@ -110,6 +110,13 @@
               </button>
             </form>
           </div>
+          <div class="dark__light__theme">
+            <button id="toggleDark">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+
+          </div>
         </div>
       </nav>
     </div>
@@ -117,33 +124,33 @@
   </header>
 
   <main>
-      <!-- Banner -->
+    <!-- Banner -->
     <section class="banner__about-us d-flex align-items-center">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="banner__title">
-                <h1 class="text-white mb-3">About Us</h1>
-                <div class="d-flex align-items-center">
-                <a href="/">Home</a>
-                <i class="fa-solid fa-angles-right"></i>
-                <span>
-                    About Page
-                </span>
-                </div>
-            </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="banner__title">
+          <h1 class="text-white mb-3">About Us</h1>
+          <div class="d-flex align-items-center">
+            <a href="/">Home</a>
+            <i class="fa-solid fa-angles-right"></i>
+            <span>
+              About Page
+            </span>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Blog-post  -->
     <section class="blog">
       <div class="container py-md-5">
-        <div class="blogposts_content d-flex justify-content-between">
-          <div class="bp_left col-8">
+        <div class=" row blogposts_content d-flex justify-content-between">
+          <div class="bp_left col-12 col-lg-8">
             <!-- blogpost card -->
             <div class="bp_card">
               <!-- card-1  -->
               <div class="card">
-                <img src="./../images/img_banner2.jpg"  class="card-img-top" alt="">
+                <img src="./../images/img_banner2.jpg" class="card-img-top" alt="">
                 <div class="card_body">
                   <div class="card_date d-flex justify-content-between align-self-center">
                     <div class="date_layout">
@@ -160,9 +167,9 @@
                   <h5 class="card-title">Hello World!</h5>
                 </div>
               </div>
-               <!-- card-2  -->
-               <div class="card">
-                <img src="./../images/img_banner1.jpg"  class="card-img-top" alt="">
+              <!-- card-2  -->
+              <div class="card">
+                <img src="./../images/img_banner1.jpg" class="card-img-top" alt="">
                 <div class="card_body">
                   <div class="card_date d-flex justify-content-between align-self-center">
                     <div class="date_layout">
@@ -181,7 +188,7 @@
               </div>
               <!-- card-3  -->
               <div class="card">
-                <img src="./../images/blogposts_img6.jpg"  class="card-img-top" alt="">
+                <img src="./../images/blogposts_img6.jpg" class="card-img-top" alt="">
                 <div class="card_body">
                   <div class="card_date d-flex justify-content-between align-self-center">
                     <div class="date_layout">
@@ -200,7 +207,7 @@
               </div>
               <!-- card-4  -->
               <div class="card">
-                <img src="./../images/blogposts_img2.jpg"  class="card-img-top" alt="">
+                <img src="./../images/blogposts_img2.jpg" class="card-img-top" alt="">
                 <div class="card_body">
                   <div class="card_date d-flex justify-content-between align-self-center">
                     <div class="date_layout">
@@ -219,7 +226,7 @@
               </div>
               <!-- card-5  -->
               <div class="card">
-                <img src="./../images/blogposts_img8.jpg"  class="card-img-top" alt="">
+                <img src="./../images/blogposts_img8.jpg" class="card-img-top" alt="">
                 <div class="card_body">
                   <div class="card_date d-flex justify-content-between align-self-center">
                     <div class="date_layout">
@@ -252,54 +259,54 @@
             </div>
           </div>
           <!-- position sticky  -->
-          <div class="bp_right col-4">
+          <div class="bp_right col-12 col-lg-4">
             <div class="bp_sticky">
               <div class="input_search">
-              <form class="bp_search">
-                <input class="form-control" type="search" placeholder="Search">
-                <input type="submit" class="search-submit" value="Search">
-              </form>
+                <form class="bp_search">
+                  <input class="form-control" type="search" placeholder="Search ...">
+                  <input type="submit" class="search-submit" value="Search">
+                </form>
               </div>
               <!-- recent-post-->
               <div class="box_right">
-              <h2>Recent Posts</h2>
-              <ul>
-                <li><a href="#">Hello World</a></li>
-                <li><a href="#">Sed Ut Unde Omnis Iste Natus</a></li>
-                <li><a href="#">Wotam Rem Eaque Ipsa Quae Ab</a></li>
-                <li><a href="#">Find The Right Learning Path For Your Group Course Online</a></li>
-                <li><a href="#">Budget Trips For Winter Break</a></li>
-              </ul>
+                <h2>Recent Posts</h2>
+                <ul>
+                  <li><a href="#">Hello World</a></li>
+                  <li><a href="#">Sed Ut Unde Omnis Iste Natus</a></li>
+                  <li><a href="#">Wotam Rem Eaque Ipsa Quae Ab</a></li>
+                  <li><a href="#">Find The Right Learning Path For Your Group Course Online</a></li>
+                  <li><a href="#">Budget Trips For Winter Break</a></li>
+                </ul>
               </div>
               <!-- recent-comment  -->
               <div class="box_right">
-              <h2>Recent Comments</h2>
-              <ul>
-                <li>
-                  <a href="#" class="rcmt">A WordPress Commenter</a> on <a href="#" class="rcmt"> Hello World!</a>
-                </li>
-                <li>
-                  <a href="#" class="rcmt">A WordPress Commenter</a> on <a href="#" class="rcmt"> Hello World!</a>
-                </li>
-              </ul>
+                <h2>Recent Comments</h2>
+                <ul>
+                  <li>
+                    <a href="#" class="rcmt">A WordPress Commenter</a> on <a href="#" class="rcmt"> Hello World!</a>
+                  </li>
+                  <li>
+                    <a href="#" class="rcmt">A WordPress Commenter</a> on <a href="#" class="rcmt"> Hello World!</a>
+                  </li>
+                </ul>
               </div>
               <!-- archive -->
               <div class="box_right">
-              <h2>Archives</h2>
-              <ul>
-                <li><a href="#">April 2021</a></li>
-              </ul>
+                <h2>Archives</h2>
+                <ul>
+                  <li><a href="#">April 2021</a></li>
+                </ul>
               </div>
               <!-- categories  -->
               <div class="box_right">
-              <h2>Categories</h2>
-              <ul>
-                <li><a href="#">Bussiness</a></li>
-                <li><a href="#">Creative</a></li>
-                <li><a href="#">Design</a></li>
-                <li><a href="#">Food</a></li>
-                <li><a href="#">Industry</a></li>
-              </ul>
+                <h2>Categories</h2>
+                <ul>
+                  <li><a href="#">Bussiness</a></li>
+                  <li><a href="#">Creative</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Food</a></li>
+                  <li><a href="#">Industry</a></li>
+                </ul>
               </div>
               <!-- meta  -->
               <div class="box_right">
@@ -316,22 +323,22 @@
         </div>
       </div>
     </section>
-    </main>
+  </main>
 
-    
-   
+
+
 
   <footer>
     <div class="footer__bg ">
       <div class="container">
-        <div class="sub__box m-auto">
+        <div class="sub__box">
           <div class="row align-items-center ">
-            <div class="left__box col-lg-6">
+            <div class="left__box col-md-6">
               <h3>Subscribe Us to join our Community</h3>
               <p>Newsletter</p>
             </div>
-            <div class="right__box col-lg-6">
-              <form action class="input-group mb-3">
+            <div class="right__box col-md-6">
+              <form action class="mb-3 d-flex">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
                   aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
@@ -340,35 +347,35 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="archives col-lg-2 col-sm-6">
+          <div class="archives col-lg-2 col-sm-6 mt-4 mt-lg-0">
             <h4>archives</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
               </li>
             </ul>
           </div>
-          <div class="categories col-lg-3  col-sm-6 ps-lg-5">
+          <div class="categories col-lg-3 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>categories</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
               </li>
             </ul>
           </div>
-          <div class="contact col-lg-3 col-sm-6">
+          <div class="contact col-lg-3 col-sm-6 mt-4 mt-lg-0">
             <h4>contact</h4>
             <ul>
               <li>
@@ -378,11 +385,11 @@
                 <i class="fa-solid fa-phone"></i> <a href=""> +44-000-888-999</a>
               </li>
               <li>
-                <i class="fa-solid fa-location-dot"></i> <a href=""> London, 235 Terry, 10001</a>
+                <i class="fa-solid fa-location-dot"></i> London, 235 Terry, 10001
               </li>
             </ul>
           </div>
-          <div class="about col-lg-4  col-sm-6 ps-lg-5">
+          <div class="about col-lg-4 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>About</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero facilis debitis iure repellendus, quia
               quisquam sed ipsa quos soluta adipisci aspernatur odio quibusdam, assumenda magnam nihil nostrum.</p>
@@ -412,7 +419,10 @@
 
     </div>
     <div class="footer__copyright text-center">
-      <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+      <div class="container">
+        <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+
+      </div>
     </div>
   </footer>
 
@@ -420,12 +430,10 @@
     <i class="fa-solid fa-arrow-turn-up"></i>
   </a>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -474,6 +482,8 @@
   <script src="./../js/back-to-top-master/assets/js/util.js"></script>
   <script src="./../js/back-to-top-master/assets/js/main.js"></script>
 
+  <!-- main JS -->
+  <script src="../js/main.js"></script>
 </body>
 
 </html>

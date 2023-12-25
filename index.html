@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Studious – Just another W3Layouts free WordPress Demo Sites site</title>
+
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./styles/styles.css" />
 </head>
 
-<body>
+<body id="myBody">
   <header id="header" class="position-relative">
     <div class="header__top">
       <div class="container__header d-flex justify-content-between align-items-center">
@@ -66,19 +66,20 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar d-flex align-items-center navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand d-flex align-items-center" href="./index.html">
             <img class="me-1" src="./images/logo.png" alt="LOGO STUDIOUS" />Studious
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon "></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll align-items-center p-2"
+              style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">HOME</a>
+                <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./pages/about-us.html">ABOUT US</a>
@@ -109,6 +110,13 @@
               </button>
             </form>
           </div>
+          <div class="dark__light__theme">
+            <button id="toggleDark">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+
+          </div>
         </div>
       </nav>
     </div>
@@ -127,12 +135,6 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item banner1 active">
-            <div class="overlay"></div>
-            <!-- <img
-                  src="./images/img_banner1.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                /> -->
             <div class="container">
               <div class="carousel__text">
                 <h1>Master the Skills to Drive your career</h1>
@@ -143,12 +145,6 @@
             </div>
           </div>
           <div class="carousel-item banner2">
-            <div class="overlay"></div>
-            <!-- <img
-                  src="./images/img_banner2.jpg"
-                  class="d-block w-100"
-                  alt="..."
-                /> -->
             <div class="container">
               <div class="carousel__text">
                 <h1>Master the Skills to Drive your career</h1>
@@ -334,26 +330,26 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0 text-center">
             <div class="col">
               <div class="number__item">
-                <h3 class="counter">6,000</h3>
-                <p class="text-black">LEARNERS & COUNTING</p>
+                <h3 class="counter">6,300</h3>
+                <p class="">LEARNERS & COUNTING</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item">
                 <h3 class="counter">638</h3>
-                <p class="text-black">TOTAL COURSES</p>
+                <p class="">TOTAL COURSES</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item">
                 <h3 class="counter">7,600</h3>
-                <p class="text-black">SUCCESSFUL STUDENTS</p>
+                <p class="">SUCCESSFUL STUDENTS</p>
               </div>
             </div>
             <div class="col">
               <div class="number__item border-end-0">
                 <h3 class="counter">36</h3>
-                <p class="text-black">LANGUAGES</p>
+                <p class="">LANGUAGES</p>
               </div>
             </div>
           </div>
@@ -382,7 +378,7 @@
                     <img src="./images/img_avt1.jpg" alt="avt1" />
                   </div>
                   <div class="feedback__item-name">
-                    <p class="name text-black">Petey Cruis</p>
+                    <p class="name__feedback">Petey Cruis</p>
                     <p>Caption Here</p>
                   </div>
                 </div>
@@ -402,7 +398,7 @@
                     <img src="./images/img_avt2.jpg" alt="avt2" />
                   </div>
                   <div class="feedback__item-name">
-                    <p class="name text-black">Molive Joe</p>
+                    <p class="name__feedback">Molive Joe</p>
                     <p>Caption Here</p>
                   </div>
                 </div>
@@ -422,7 +418,7 @@
                     <img src="./images/img_avt3.jpg" alt="avt3" />
                   </div>
                   <div class="feedback__item-name">
-                    <p class="name text-black">Paige Turner</p>
+                    <p class="name__feedback">Paige Turner</p>
                     <p>Caption Here</p>
                   </div>
                 </div>
@@ -442,7 +438,7 @@
           <div class="col-lg-3 col-md-6">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
+                <a href="#url">
                   <img src="./images/team1.jpg" alt="" />
                 </a>
                 <div class="team__info">
@@ -461,10 +457,10 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
+          <div class="col-lg-3 col-md-6 mt-5 mt-sm-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
+                <a href="#url">
                   <img src="./images/team2.jpg" alt="" />
                 </a>
                 <div class="team__info">
@@ -486,7 +482,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
+                <a href="#url">
                   <img src="./images/team3.jpg" alt="" />
                 </a>
                 <div class="team__info">
@@ -508,7 +504,7 @@
           <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
+                <a href="#url">
                   <img src="./images/team4.jpg" alt="" />
                 </a>
                 <div class="team__info">
@@ -557,11 +553,11 @@
       <div class="container">
         <div class="sub__box">
           <div class="row align-items-center ">
-            <div class="left__box col-lg-6">
+            <div class="left__box col-md-6">
               <h3>Subscribe Us to join our Community</h3>
               <p>Newsletter</p>
             </div>
-            <div class="right__box col-lg-6">
+            <div class="right__box col-md-6">
               <form action class="mb-3 d-flex">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
                   aria-describedby="button-addon2">
@@ -675,32 +671,11 @@
     $(".counter").countUp();
   </script>
 
-  <script>
-    var header = document.querySelector(".header__bottom");
-
-    // function changeCss() {
-    //   header.style.position = "fixed";
-    //   header.style.top = "0";
-    // }
-
-    window.addEventListener("scroll", (event) => {
-      console.log(window.scrollY);
-      if (window.scrollY > 56) {
-        header.classList.add("--changeCss");
-        console.log("first");
-      } else {
-        if (header.classList.contains("--changeCss")) {
-          header.classList.remove("--changeCss");
-        }
-      }
-    });
-  </script>
-
   <script src="./js/back-to-top-master/assets/js/util.js"></script>
   <script src="./js/back-to-top-master/assets/js/main.js"></script>
 
-
-
+  <!-- main JS -->
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

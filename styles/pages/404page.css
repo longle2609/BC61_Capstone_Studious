@@ -23,6 +23,7 @@
     display: flex;
     align-items: center;
     position: relative;
+    z-index: 1;
 }
 
 .main__404::before {
@@ -33,12 +34,12 @@
     top: 0;
     left: 0;
     right: 0;
+    z-index: -1;
 }
 
 .error__main {
     color: var(--white-1);
     max-width: 500px;
-    position: relative;
 }
 
 .error__main h2 {
@@ -81,14 +82,37 @@
     background: transparent;
 }
 
-.toHome .toHome__btn {
+.back__home .back__home__link {
     padding: 20px;
 }
 
-.toHome .toHome__btn a {
+.back__home .back__home__link a {
     display: flex;
     align-items: center;
     margin-top: 30px;
     color: var(--white-1);
     font-weight: 600;
+    transition: all .5s;
+}
+
+.back__home .back__home__link:hover a {
+    color: var(--pink-1);
+}
+
+@media screen and (max-width: 576px) {
+    .main__404 {
+        padding: 50px 0 0;
+    }
+
+    .error__main h2 {
+        font-size: 120px;
+    }
+
+    .error__main .error__message h3 {
+        font-size: 22px;
+    }
+
+    .error__searchBox .search__input {
+        width: calc(100% - 30px);
+    }
 }

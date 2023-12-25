@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>Contact page – Studious</title>
   <!-- Required meta tags -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -20,9 +20,8 @@
   <link rel="stylesheet" href="./../styles/styles.css" />
 </head>
 
-<body>
-  <header class="position-relative">
-    <!-- place navbar here -->
+<body id="myBody">
+  <header id="header" class="position-relative">
     <div class="header__top">
       <div class="container__header d-flex justify-content-between align-items-center">
         <div class="header__top-left d-flex">
@@ -67,10 +66,10 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar d-flex align-items-center navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="me-1" src="./../images/logo.png" alt="LOGO STUDIOUS" />Studious
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img class="me-1" src="../images/logo.png" alt="LOGO STUDIOUS" />Studious
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,10 +78,10 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/">HOME</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                <a class="nav-link" href="../pages/about-us.html">ABOUT US</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
@@ -90,17 +89,17 @@
                   PAGES
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./blog-posts.html">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="../pages/blog-posts.html">BLOG POSTS</a></li>
                   <li>
-                    <a class="dropdown-item" href="./page404.html">404 PAGE</a>
+                    <a class="dropdown-item" href="../pages/page404.html">404 PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item" href="./landing-page.html">LANDING PAGE</a>
+                    <a class="dropdown-item" href="../pages/landing-page.html">LANDING PAGE</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#">CONTACT</a>
+                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex position-relative" role="search">
@@ -110,6 +109,13 @@
               </button>
             </form>
           </div>
+          <div class="dark__light__theme">
+            <button id="toggleDark">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+
+          </div>
         </div>
       </nav>
     </div>
@@ -117,116 +123,118 @@
   </header>
 
   <main>
-      <!-- Banner -->
+    <!-- Banner -->
     <section class="banner__about-us d-flex align-items-center">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="banner__title">
-                <h1 class="text-white mb-3">Contact Us</h1>
-                <div class="d-flex align-items-center">
-                <a href="/">Home</a>
-                <i class="fa-solid fa-angles-right"></i>
-                <span>
-                    Contact Page
-                </span>
-                </div>
-            </div>
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="banner__title">
+          <h1 class="text-white mb-3">Contact Us</h1>
+          <div class="d-flex align-items-center">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-angles-right"></i>
+            <span>
+              Contact Page
+            </span>
+          </div>
         </div>
+      </div>
     </section>
+    <!-- location -->
     <section class="location">
-        <div class="container py-5">
-          <div class="row  ">
-            <div class="col-md-5 location__left">
-              <h3 class="mb-5 fw-bold">Get in touch with us</h3>
-              <!-- address -->
-              <div class="location__detail d-flex mb-4">
-                <div class="detail__left me-2 ">
-                  <i class="fa-solid fa-earth-asia "></i>
-                </div>
-                <div class="detail__right">
-                  <h4>Company Address</h4>
-                  <p>10001, 5th Avenue, 12202 street, London.</p>
-                </div>
+      <div class="container py-5">
+        <div class="row  ">
+          <div class="col-md-5 location__left">
+            <h3 class="mb-5 fw-bold">Get in touch with us</h3>
+            <!-- address -->
+            <div class="location__detail d-flex mb-4">
+              <div class="detail__left me-2 ">
+                <i class="fa-solid fa-earth-asia "></i>
               </div>
-              <!-- phone -->
-              <div class="location__detail d-flex mb-4">
-                <div class="detail__left me-2 ">
-                  <i class="fa-solid fa-phone"></i>
-                </div>
-                <div class="detail__right">
-                  <h4>Call Us</h4>
-                  <p><a href="#">+1(21) 234 4567</a></p>
-                </div>
-              </div>
-              <!-- email -->
-              <div class="location__detail d-flex mb-4">
-                <div class="detail__left me-2 ">
-                  <i class="fa-regular fa-envelope-open"></i>
-                </div>
-                <div class="detail__right">
-                  <h4>Email Us</h4>
-                  <p><a href="#">example@mail.com</a></p>
-                </div>
-              </div>
-              <!-- hotline -->
-              <div class="location__detail d-flex">
-                <div class="detail__left me-2 ">
-                  <i class="fa-solid fa-headphones-simple"></i>
-                </div>
-                <div class="detail__right">
-                  <h4>Customer Support</h4>
-                  <p><a href="#">info@support.com</a></p>
-                </div>
+              <div class="detail__right">
+                <h4>Company Address</h4>
+                <p>10001, 5th Avenue, 12202 street, London.</p>
               </div>
             </div>
-            <div class="col-md-7 location__right">
-              <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
-                width="100%" height="400" frameborder="0" allowfullscreen></iframe>
+            <!-- phone -->
+            <div class="location__detail d-flex mb-4">
+              <div class="detail__left me-2 ">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="detail__right">
+                <h4>Call Us</h4>
+                <p><a href="#">+1(21) 234 4567</a></p>
+              </div>
             </div>
+            <!-- email -->
+            <div class="location__detail d-flex mb-4">
+              <div class="detail__left me-2 ">
+                <i class="fa-regular fa-envelope-open"></i>
+              </div>
+              <div class="detail__right">
+                <h4>Email Us</h4>
+                <p><a href="#">example@mail.com</a></p>
+              </div>
+            </div>
+            <!-- hotline -->
+            <div class="location__detail d-flex">
+              <div class="detail__left me-2 ">
+                <i class="fa-solid fa-headphones-simple"></i>
+              </div>
+              <div class="detail__right">
+                <h4>Customer Support</h4>
+                <p><a href="#">info@support.com</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 location__right">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d317718.69319292053!2d-0.3817765050863085!3d51.528307984912544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8a00baf21de75%3A0x52963a5addd52a99!2sLondon%2C+UK!5e0!3m2!1sen!2spl!4v1562654563739!5m2!1sen!2spl"
+              width="100%" height="400" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
-      </section>
-      <section class="question__form py-5">
-        <div class="container mx-auto">
-          <div class="title__heading">
-            <h2>We will Answer all your <span>Questions</span></h2>
+      </div>
+    </section>
+    <!-- question form -->
+    <section class="question__form py-5">
+      <div class="container mx-auto">
+        <div class="title__heading">
+          <h2>We will Answer all your <span>Questions</span></h2>
+        </div>
+        <div class="row justify-content-center align-items-center ">
+          <div class="col-md-5 question__left">
+            <img src="../images/question_form.jpg" class="img-fluid" alt="img_question_form">
           </div>
-          <div class="row justify-content-center align-items-center ">
-            <div class="col-lg-5 question__left">
-              <img src="../images/question_form.jpg" class="img-fluid" alt="img_question_form">
-            </div>
-            <div class="col-lg-7 question__right px-lg-4 mt-4 mt-md-0">
-              <form action>
-                <div class="quest__input">
-                  <input type="text" placeholder="Your Name*">
-                  <input type="email" placeholder="Your Email*">
-                  <input type="text" placeholder="Subject*">
-                </div>
-                <div class="quest__message">
-                  <textarea name="questMessage" id="questMessage" rows="5"
-                    placeholder="Type your message here*"></textarea>
-                </div>
-                <button>Send Message</button>
-              </form>
-            </div>
+          <div class="col-md-7 question__right px-lg-4 mt-4 mt-md-0">
+            <form action>
+              <div class="quest__input">
+                <input type="text" placeholder="Your Name*">
+                <input type="email" placeholder="Your Email*">
+                <input type="text" placeholder="Subject*">
+              </div>
+              <div class="quest__message">
+                <textarea name="questMessage" id="questMessage" rows="5"
+                  placeholder="Type your message here*"></textarea>
+              </div>
+              <button>Send Message</button>
+            </form>
           </div>
         </div>
-      </section>
-   
+      </div>
+    </section>
+
   </main>
 
   <footer>
     <div class="footer__bg ">
       <div class="container">
-        <div class="sub__box m-auto">
+        <div class="sub__box">
           <div class="row align-items-center ">
-            <div class="left__box col-lg-6">
+            <div class="left__box col-md-6">
               <h3>Subscribe Us to join our Community</h3>
               <p>Newsletter</p>
             </div>
-            <div class="right__box col-lg-6">
-              <form action class="input-group mb-3">
+            <div class="right__box col-md-6">
+              <form action class="mb-3 d-flex">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
                   aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
@@ -235,35 +243,35 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="archives col-lg-2 col-sm-6">
+          <div class="archives col-lg-2 col-sm-6 mt-4 mt-lg-0">
             <h4>archives</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
               </li>
             </ul>
           </div>
-          <div class="categories col-lg-3  col-sm-6 ps-lg-5">
+          <div class="categories col-lg-3 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>categories</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
               </li>
             </ul>
           </div>
-          <div class="contact col-lg-3 col-sm-6">
+          <div class="contact col-lg-3 col-sm-6 mt-4 mt-lg-0">
             <h4>contact</h4>
             <ul>
               <li>
@@ -273,11 +281,11 @@
                 <i class="fa-solid fa-phone"></i> <a href=""> +44-000-888-999</a>
               </li>
               <li>
-                <i class="fa-solid fa-location-dot"></i> <a href=""> London, 235 Terry, 10001</a>
+                <i class="fa-solid fa-location-dot"></i> London, 235 Terry, 10001
               </li>
             </ul>
           </div>
-          <div class="about col-lg-4  col-sm-6 ps-lg-5">
+          <div class="about col-lg-4 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>About</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero facilis debitis iure repellendus, quia
               quisquam sed ipsa quos soluta adipisci aspernatur odio quibusdam, assumenda magnam nihil nostrum.</p>
@@ -307,16 +315,17 @@
 
     </div>
     <div class="footer__copyright text-center">
-      <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+      <div class="container">
+        <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+
+      </div>
     </div>
   </footer>
 
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
 
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -339,26 +348,8 @@
     $(".counter").countUp();
   </script>
 
-  <script>
-    var header = document.querySelector(".header__bottom");
-
-    // function changeCss() {
-    //   header.style.position = "fixed";
-    //   header.style.top = "0";
-    // }
-
-    window.addEventListener("scroll", (event) => {
-      console.log(window.scrollY);
-      if (window.scrollY > 56) {
-        header.classList.add("--changeCss");
-        console.log("first");
-      } else {
-        if (header.classList.contains("--changeCss")) {
-          header.classList.remove("--changeCss");
-        }
-      }
-    });
-  </script>
+  <script src="../js/main.js"></script>
 </body>
+
 
 </html>
