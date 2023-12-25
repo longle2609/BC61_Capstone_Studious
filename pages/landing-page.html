@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="./../styles/styles.css" />
 </head>
 
-<body>
+<body id="myBody">
   <header class="position-relative">
     <!-- place navbar here -->
     <div class="header__top">
@@ -67,10 +67,10 @@
       </div>
     </div>
     <div class="header__bottom">
-      <nav class="navbar d-flex align-items-center navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar d-flex align-items-center navbar-expand-lg">
         <div class="container-fluid">
-          <a class="navbar-brand" href="/">
-            <img class="me-1" src="./../images/logo.png" alt="LOGO STUDIOUS" />Studious
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img class="me-1" src="../images/logo.png" alt="LOGO STUDIOUS" />Studious
           </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,28 +79,28 @@
           <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="./../index.html">HOME</a>
+                <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./about-us.html">ABOUT US</a>
+                <a class="nav-link" href="../pages/about-us.html">ABOUT US</a>
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown"
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                   aria-expanded="false">
                   PAGES
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="./blog-posts.html">BLOG POSTS</a></li>
+                  <li><a class="dropdown-item" href="../pages/blog-posts.html">BLOG POSTS</a></li>
                   <li>
-                    <a class="dropdown-item" href="./page404.html">404 PAGE</a>
+                    <a class="dropdown-item" href="../pages/page404.html">404 PAGE</a>
                   </li>
                   <li>
-                    <a class="dropdown-item active" href="./landing-page.html">LANDING PAGE</a>
+                    <a class="dropdown-item" href="../pages/landing-page.html">LANDING PAGE</a>
                   </li>
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="./contact.html">CONTACT</a>
+                <a class="nav-link" href="../pages/contact.html">CONTACT</a>
               </li>
             </ul>
             <form class="d-flex position-relative" role="search">
@@ -110,6 +110,13 @@
               </button>
             </form>
           </div>
+          <div class="dark__light__theme">
+            <button id="toggleDark">
+              <i class="fa-regular fa-moon"></i>
+              <i class="fa-regular fa-sun"></i>
+            </button>
+
+          </div>
         </div>
       </nav>
     </div>
@@ -117,45 +124,46 @@
   </header>
 
   <main>
-   <!-- Banner -->
-   <section class="banner">
-    <div id="carouselExampleRide" class="carousel slide">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
-          aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1"
-          aria-label="Slide 2"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item banner1 active">
-          <div class="overlay"></div>
-          <!-- <img
+    <!-- Banner -->
+    <section class="banner">
+      <div id="carouselExampleRide" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleRide" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item banner1 active">
+            <div class="overlay"></div>
+            <!-- <img
                 src="./images/img_banner1.jpg"
                 class="d-block w-100"
                 alt="..."
               /> -->
-          <div class="container">
-            <div class="carousel__text">
-              <h1>Master the Skills to Drive your career</h1>
-              <a href="#">
-                Know More
-                <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="container">
+              <div class="carousel__text">
+                <h1>Master the Skills to Drive your career</h1>
+                <a href="#">
+                  Know More
+                  <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="carousel-item banner2">
-          <div class="overlay"></div>
-          <!-- <img
+          <div class="carousel-item banner2">
+            <div class="overlay"></div>
+            <!-- <img
                 src="./images/img_banner2.jpg"
                 class="d-block w-100"
                 alt="..."
               /> -->
-          <div class="container">
-            <div class="carousel__text">
-              <h1>Master the Skills to Drive your career</h1>
-              <a href="#">
-                Know More
-                <i class="fa-solid fa-arrow-right"></i></a>
+            <div class="container">
+              <div class="carousel__text">
+                <h1>Master the Skills to Drive your career</h1>
+                <a href="#">
+                  Know More
+                  <i class="fa-solid fa-arrow-right"></i></a>
+              </div>
             </div>
           </div>
         </div>
@@ -177,23 +185,22 @@
             <i class="fa-solid fa-book"></i>
             <a href="#">Learning Management</a>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
-          <div class="service__item box__color-3">
-            <i class="fa-solid fa-mug-saucer"></i>
-            <a href="#">Business & Management</a>
+          <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
+            <div class="service__item box__color-3">
+              <i class="fa-solid fa-mug-saucer"></i>
+              <a href="#">Business & Management</a>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
-          <div class="service__item box__color-4">
-            <i class="fa-regular fa-hourglass-half"></i>
-            <a href="#">Artificial <br />
-              Intelligence</a>
+          <div class="col-lg-3 col-md-6 mt-md-0 mt-2">
+            <div class="service__item box__color-4">
+              <i class="fa-regular fa-hourglass-half"></i>
+              <a href="#">Artificial <br />
+                Intelligence</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
     <!-- Studious -->
     <section class="studious pb-5">
       <div class="studious__top py-5">
@@ -266,9 +273,9 @@
                 <div class="col-lg-4"></div>
                 <div class="col-lg-8">
                   <!-- màn hình large chia 2 cột 2 dòng, màn hình sm,md thì chia 1 cột 1 dòng -->
-                  <div class="row row-cols-lg-2 row-cols-1">
+                  <div class="row row-cols-md-2 row-cols-1 g-4">
                     <div class="col">
-                      <div class="studious__bottom-item my-2 d-flex align-items-center">
+                      <div class="studious__bottom-item d-flex align-items-center">
                         <div class="icon">
                           <i class="fa-solid fa-hands-asl-interpreting"></i>
                         </div>
@@ -279,7 +286,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="studious__bottom-item my-2 d-flex align-items-center">
+                      <div class="studious__bottom-item d-flex align-items-center">
                         <div class="icon">
                           <i class="fa-solid fa-download"></i>
                         </div>
@@ -290,7 +297,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="studious__bottom-item my-2 d-flex align-items-center">
+                      <div class="studious__bottom-item d-flex align-items-center">
                         <div class="icon">
                           <i class="fa-solid fa-headphones-simple"></i>
                         </div>
@@ -301,7 +308,7 @@
                       </div>
                     </div>
                     <div class="col">
-                      <div class="studious__bottom-item my-2 d-flex align-items-center">
+                      <div class="studious__bottom-item d-flex align-items-center">
                         <div class="icon">
                           <i class="fa-solid fa-circle-play"></i>
                         </div>
@@ -335,7 +342,7 @@
           <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-4 gy-lg-0 text-center">
             <div class="col">
               <div class="number__item">
-                <h3 class="counter">6,000</h3>
+                <h3 class="counter">6,300</h3>
                 <p class="text-black">LEARNERS & COUNTING</p>
               </div>
             </div>
@@ -443,8 +450,8 @@
           <div class="col-lg-3 col-md-6">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
-                  <img src="./images/team1.jpg" alt="" />
+                <a href="#url">
+                  <img src="../images/team1.jpg" alt="" />
                 </a>
                 <div class="team__info">
                   <div class="info__icon">
@@ -462,11 +469,11 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-5 mt-sm-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
-                  <img src="./images/team2.jpg" alt="" />
+                <a href="#url">
+                  <img src="../images/team2.jpg" alt="" />
                 </a>
                 <div class="team__info">
                   <div class="info__icon">
@@ -478,17 +485,17 @@
               </div>
               <div class="team__bottom p-4">
                 <h3>
-                  <a href="#">olive yew</a>
+                  <a href="#">Aida Joe</a>
                 </h3>
-                <p>teaches design</p>
+                <p>UI/UX Designer</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
-                  <img src="./images/team3.jpg" alt="" />
+                <a href="#url">
+                  <img src="../images/team3.jpg" alt="" />
                 </a>
                 <div class="team__info">
                   <div class="info__icon">
@@ -500,17 +507,17 @@
               </div>
               <div class="team__bottom p-4">
                 <h3>
-                  <a href="#">olive yew</a>
+                  <a href="#">Teri Dac</a>
                 </h3>
-                <p>teaches design</p>
+                <p>Teaches Skills </p>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
             <div class="team__card">
               <div class="team__image">
-                <a href="">
-                  <img src="./images/team4.jpg" alt="" />
+                <a href="#url">
+                  <img src="../images/team4.jpg" alt="" />
                 </a>
                 <div class="team__info">
                   <div class="info__icon">
@@ -522,15 +529,16 @@
               </div>
               <div class="team__bottom p-4">
                 <h3>
-                  <a href="#">olive yew</a>
+                  <a href="#">Anton Bne</a>
                 </h3>
-                <p>teaches design</p>
+                <p>Web Designer</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- location -->
     <section class="location">
       <div class="container py-5">
         <div class="row  ">
@@ -585,16 +593,17 @@
         </div>
       </div>
     </section>
+    <!-- question form -->
     <section class="question__form py-5">
       <div class="container mx-auto">
         <div class="title__heading">
           <h2>We will Answer all your <span>Questions</span></h2>
         </div>
         <div class="row justify-content-center align-items-center ">
-          <div class="col-lg-5 question__left">
+          <div class="col-md-5 question__left">
             <img src="../images/question_form.jpg" class="img-fluid" alt="img_question_form">
           </div>
-          <div class="col-lg-7 question__right px-lg-4 mt-4 mt-md-0">
+          <div class="col-md-7 question__right px-lg-4 mt-4 mt-md-0">
             <form action>
               <div class="quest__input">
                 <input type="text" placeholder="Your Name*">
@@ -616,14 +625,14 @@
   <footer>
     <div class="footer__bg ">
       <div class="container">
-        <div class="sub__box m-auto">
+        <div class="sub__box">
           <div class="row align-items-center ">
-            <div class="left__box col-lg-6">
+            <div class="left__box col-md-6">
               <h3>Subscribe Us to join our Community</h3>
               <p>Newsletter</p>
             </div>
-            <div class="right__box col-lg-6">
-              <form action class="input-group mb-3">
+            <div class="right__box col-md-6">
+              <form action class="mb-3 d-flex">
                 <input type="text" class="form-control" placeholder="Enter your email" aria-label="Enter your email"
                   aria-describedby="button-addon2">
                 <button class="btn btn-outline-secondary" type="button" id="button-addon2">Send</button>
@@ -632,35 +641,35 @@
           </div>
         </div>
         <div class="row footer__bottom">
-          <div class="archives col-lg-2 col-sm-6">
+          <div class="archives col-lg-2 col-sm-6 mt-4 mt-lg-0">
             <h4>archives</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> April 2023</a>
               </li>
             </ul>
           </div>
-          <div class="categories col-lg-3  col-sm-6 ps-lg-5">
+          <div class="categories col-lg-3 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>categories</h4>
             <ul>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Business </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Creative </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Design </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Food </a>
               </li>
               <li>
-                <a href=""> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
+                <a href="#"> <i class="fa-sharp fa-solid fa-angles-right"></i> Industry </a>
               </li>
             </ul>
           </div>
-          <div class="contact col-lg-3 col-sm-6">
+          <div class="contact col-lg-3 col-sm-6 mt-4 mt-lg-0">
             <h4>contact</h4>
             <ul>
               <li>
@@ -670,11 +679,11 @@
                 <i class="fa-solid fa-phone"></i> <a href=""> +44-000-888-999</a>
               </li>
               <li>
-                <i class="fa-solid fa-location-dot"></i> <a href=""> London, 235 Terry, 10001</a>
+                <i class="fa-solid fa-location-dot"></i> London, 235 Terry, 10001
               </li>
             </ul>
           </div>
-          <div class="about col-lg-4  col-sm-6 ps-lg-5">
+          <div class="about col-lg-4 col-sm-6 ps-lg-5 mt-4 mt-lg-0">
             <h4>About</h4>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero facilis debitis iure repellendus, quia
               quisquam sed ipsa quos soluta adipisci aspernatur odio quibusdam, assumenda magnam nihil nostrum.</p>
@@ -704,7 +713,10 @@
 
     </div>
     <div class="footer__copyright text-center">
-      <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+      <div class="container">
+        <p>© 2023 Studious. All Rights Reserved | WordPress Theme by <a href="#">W3Layouts.</a href=""></p>
+
+      </div>
     </div>
   </footer>
 
@@ -759,6 +771,8 @@
       }
     });
   </script>
+
+  <script src="../js/main.js"></script>
 
   <script src="./../js/back-to-top-master/assets/js/util.js"></script>
   <script src="./../js/back-to-top-master/assets/js/main.js"></script>
