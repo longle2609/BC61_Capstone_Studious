@@ -58,7 +58,7 @@ p {
 .container__header {
     width: 100%;
     margin: auto;
-    padding-top: 1rem;
+    /* padding-top: 1rem; */
     padding-left: 32px;
 
 }
@@ -152,9 +152,9 @@ p {
     color: var(--pink-1);
 }
 
-.dark#myBody header .header__bottom i {
-    /* color: var(--white-1); */
-}
+/* .dark#myBody header .header__bottom i {
+    color: var(--white-1);
+} */
 
 .dark#myBody .navbar-collapse {
     background: var(--dark-theme-bg);
@@ -403,13 +403,13 @@ header .header__bottom .navbar .navbar-nav .active {
 /* BANNER CSS */
 
 .banner .carousel-item {
-    min-height: 90vh;
+    min-height: 100vh;
     /* height: calc(100vh - 56px); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    display: grid;
-    align-items: center;
+    /* display: grid;
+    align-items: center; */
     z-index: 0;
 }
 
