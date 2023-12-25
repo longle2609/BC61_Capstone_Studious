@@ -23,12 +23,13 @@
 <body id="myBody">
   <!-- video fullcreen  -->
   <div class="fullcreen">
-    <div class="overlay__video"></div>
-    <div class="fullcreen__video" id="full-video">
+    <!-- <div class="overlay__video"></div> -->
+    <div class="fullcreen__video">
       <div class="fullcreen__video-content d-flex flex-column align-items-center">
-        <a href="#full-video" id="close-button">x</a>
-        <iframe width="100%" height="420px" src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0"
-          frameborder="0" allowfullscreen></iframe>
+        <span id="close-button">x</span>
+        <iframe width="100%" height="420px"
+                src="https://player.vimeo.com/video/83651159?title=0&byline=0&portrait=0" frameborder="0"
+                allowfullscreen></iframe>
       </div>
     </div>
   </div>
@@ -156,16 +157,17 @@
           <div class="col pr-lg-5">
             <div class="content__text">
               <h3>Our Mission is to Provide a World‑class Education</h3>
-              <p class="mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
+              <p class="pe-md-0 pe-sm-0 mt-4">Lorem ipsum viverra feugiat. Pellen tesque libero ut justo, ultrices in ligula. Semper at
                 tempufddfel.</p>
             </div>
           </div>
           <div class="col pr-lg-5 mt-5 mt-lg-0">
             <div class="content__video position-relative">
               <img src="./../images/img_bg-video.jpg" alt="">
-              <a href="#full-video" id="play-video" class="position-absolute">
+              <span id="play-video" class="position-absolute">
+
                 <i class="fa-regular fa-circle-play"></i>
-              </a>
+              </span>
             </div>
           </div>
         </div>
@@ -571,6 +573,10 @@
     </div>
   </footer>
 
+  <a href="#" class="cd-top text-replace js-cd-top back_to_top">
+    <i class="fa-solid fa-arrow-turn-up"></i>
+  </a>
+
   <!-- Bootstrap JavaScript Libraries -->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -640,9 +646,25 @@
         video.classList.remove('--clickCss');
       }
     })
+
   </script>
+            
   <!-- main JS -->
   <script src="../js/main.js"></script>
+  </script>
+
+  <script src="./../js/back-to-top-master/assets/js/util.js"></script>
+  <script src="./../js/back-to-top-master/assets/js/main.js"></script>
+  
+  <script>
+    var fullscreen = document.querySelector('.fullcreen')
+    window.addEventListener('scroll',(event) => {
+      console.log(window.scrollY);
+      let a = window.scrollY
+      fullscreen.setAttribute("style", `padding-top: ${a}px;`);
+      return;
+    })
+  </script>
 
 </body>
 
